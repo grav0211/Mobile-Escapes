@@ -387,3 +387,7 @@ fieldset[disabled] .btn-custom.focus {
 .jumbotron a{
     color: #1f1f1f;
 }
+
+.buttonwidth {
+    width:100%;
+}
