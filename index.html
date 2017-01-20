@@ -174,7 +174,7 @@
                         <h4><i class="fa fa-fw fa-cogs"></i> Services</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Explore the different team-building services available to individual groups or multiple groups as well as organizations.</p>
+                        <p>Come explore the different team-building activities available to individual groups or multiple groups as well as schools and organizations.</p>
                         <a href="services.html" class="btn btn-custom">Learn More</a>
                     </div>
                 </div>
@@ -325,6 +325,9 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    
+    <!-- jQuery Mobile Custom -->
+    <script src=”jquery.mobile.custom.min.js”></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -334,7 +337,17 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    
+    $(document).ready(function() {  
+   $("#myCarousel").swiperight(function() {  
+      $("#myCarousel").carousel('prev');  
+    });  
+   $("#myCarousel").swipeleft(function() {  
+      $("#myCarousel").carousel('next');  
+   });  
+}); 
     </script>
+    
 
 </body>
 
